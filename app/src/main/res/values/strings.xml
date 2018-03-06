@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TheGreatPlayer</string>
+    <string name="genres">Genres</string>
+    <string name="genres_text">Welcome! Below you can choose from the preset genres collection of the music styles that you could listen to, whenever you want!</string>
+</resources>
