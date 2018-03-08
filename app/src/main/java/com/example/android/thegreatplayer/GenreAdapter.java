@@ -12,6 +12,10 @@ import android.widget.ArrayAdapter;
 
 public class GenreAdapter extends ArrayAdapter<GenreObject> {
 
+
+
+
+    
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         return super.getView(position, convertView, parent);
