@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         genres.add(new GenreObject("Blues", R.drawable.drums));
         genres.add(new GenreObject("Jazz", R.drawable.drums));
         genres.add(new GenreObject("Metal", R.drawable.drums));
-        genres.add(new GenreObject("Heavy Metal", R.drawable.drums));
+        genres.add(new GenreObject("Funk", R.drawable.drums));
         genres.add(new GenreObject("Soul", R.drawable.drums));
         genres.add(new GenreObject("R&B", R.drawable.drums));
         genres.add(new GenreObject("Pop", R.drawable.drums));
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         genres.add(new GenreObject("Techno", R.drawable.drums));
 
 
-        ArrayAdapter<GenreObject> adapter = new ArrayAdapter<>(this,R.layout.grid_item,genres);
+        GenreAdapter adapter = new GenreAdapter(this,genres);
         GridView gridView = findViewById(R.id.gridView);
         gridView.setAdapter(adapter);
     }
