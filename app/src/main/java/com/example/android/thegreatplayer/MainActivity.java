@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         genres.add(new GenreObject("Hip-hop", R.drawable.drums));
         genres.add(new GenreObject("Punk rock", R.drawable.drums));
         genres.add(new GenreObject("Techno", R.drawable.drums));
+        genres.add(new GenreObject("Film",R.drawable.drums));
 
 
         GenreAdapter adapter = new GenreAdapter(this,genres);
