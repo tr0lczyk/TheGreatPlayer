@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
         ArrayList<GenreObject> genres = new ArrayList<>();
 
         genres.add(new GenreObject("Rock", R.drawable.drums));

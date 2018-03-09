@@ -22,7 +22,6 @@ public class GenreAdapter extends ArrayAdapter<GenreObject> {
         super(context,0,genres);
     }
 
-
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
@@ -39,8 +38,6 @@ public class GenreAdapter extends ArrayAdapter<GenreObject> {
 
         ImageView imageVIew = listItemView.findViewById(R.id.genre_image);
         imageVIew.setImageResource(currentGenreObject.getImgResource());
-
-        
 
         return listItemView;
     }
