@@ -4,4 +4,6 @@
     <string name="genres_text">Welcome! Below you can choose from the preset genres collection of the music styles that you could listen to, whenever you want!</string>
     <string name="playlist">Playlist</string>
     <string name="playing_now">Playing now</string>
+    <string name="rock">Rock</string>
+    <string name="rock_text">Hey! Here you can access the list of the particular songs set in the style you have previously chosen.</string>
 </resources>

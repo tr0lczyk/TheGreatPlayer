@@ -6,29 +6,32 @@
     style="@style/main_constraint">
 
     <TextView
-        android:id="@+id/genres"
-        android:text="@string/genres"
+        android:id="@+id/styles"
+        tools:text="@string/rock"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         style="@style/title_textView" />
 
     <TextView
-        android:id="@+id/intro_genres"
-        android:text="@string/genres_text"
+        android:id="@+id/intro_style"
+        android:text="@string/rock_text"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/genres"
+        app:layout_constraintTop_toBottomOf="@+id/styles"
         style="@style/text_textView" />
 
 
-    <GridView
-        android:id="@+id/gridView"
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/constraints"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/intro_genres"
-        style="@style/gridView" />
+        app:layout_constraintTop_toBottomOf="@+id/intro_style"
+        android:orientation="vertical"
+        android:drawSelectorOnTop="true" />
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/constraints"
@@ -38,7 +41,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gridView"
+        app:layout_constraintTop_toBottomOf="@+id/listView"
         app:layout_constraintVertical_bias="0.974"
         style="@style/botom_line_constraint">
 
