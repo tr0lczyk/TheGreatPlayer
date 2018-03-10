@@ -6,4 +6,5 @@
     <string name="playing_now">Playing now</string>
     <string name="rock">Rock</string>
     <string name="rock_text">Hey! Here you can access the list of the particular songs set in the style you have previously chosen.</string>
+    <string name="playing_text">Wow! This is the screen where you can access.</string>
 </resources>

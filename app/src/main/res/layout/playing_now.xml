@@ -2,40 +2,124 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.android.thegreatplayer.MainActivity"
-    style="@style/main_constraint">
+    style="@style/main_constraint"
+    tools:context="com.example.android.thegreatplayer.MainActivity">
 
     <TextView
         android:id="@+id/types"
-        tools:text="@string/rock"
+        style="@style/title_textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        style="@style/title_textView" />
+        tools:text="@string/rock" />
 
     <TextView
         android:id="@+id/intro_playing"
+        style="@style/text_textView"
         android:text="@string/rock_text"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/types"
-        style="@style/text_textView" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/types" />
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/song_playing"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:background="@color/playing_color"
         app:layout_constraintBottom_toTopOf="@id/constraints"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/intro_playing">
 
-        
 
+        <ImageView
+            android:id="@+id/playing_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/musiclogo" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            app:layout_constraintEnd_toEndOf="@+id/playing_image"
+            app:layout_constraintStart_toStartOf="@+id/playing_image"
+            app:layout_constraintTop_toBottomOf="@+id/playing_image" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="64dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/progressBar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/playing_image"
+            tools:text="2:38" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="64dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/progressBar"
+            app:layout_constraintTop_toBottomOf="@+id/playing_image"
+            tools:text="4:16" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar"
+            app:layout_constraintStart_toStartOf="@+id/progressBar"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@android:drawable/ic_media_play" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="9dp"
+            android:backgroundTint="@android:color/transparent"
+            app:layout_constraintStart_toEndOf="@+id/imageButton4"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar"
+            app:srcCompat="@android:drawable/ic_media_next" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="9dp"
+            android:backgroundTint="@android:color/transparent"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar"
+            app:srcCompat="@android:drawable/ic_media_previous" />
     </android.support.constraint.ConstraintLayout>
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/constraints"
+        style="@style/botom_line_constraint"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -43,62 +127,61 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/song_playing"
-        app:layout_constraintVertical_bias="0.974"
-        style="@style/botom_line_constraint">
+        app:layout_constraintVertical_bias="0.974">
 
         <ImageButton
             android:id="@+id/imageButton"
+            style="@style/genres_button"
             app:layout_constraintEnd_toStartOf="@+id/imageButton2"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@android:drawable/ic_input_get"
-            style="@style/genres_button" />
+            app:srcCompat="@android:drawable/ic_input_get" />
 
         <TextView
             android:id="@+id/textView3"
+            style="@style/genres_textView"
             android:text="@string/genres"
             app:layout_constraintEnd_toStartOf="@+id/textView4"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageButton"
-            style="@style/genres_textView" />
+            app:layout_constraintTop_toBottomOf="@+id/imageButton" />
 
         <ImageButton
             android:id="@+id/imageButton2"
+            style="@style/playlist_button"
             app:layout_constraintEnd_toStartOf="@+id/imageButton3"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/imageButton"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@android:drawable/ic_menu_share"
-            style="@style/playlist_button" />
+            app:srcCompat="@android:drawable/ic_menu_share" />
 
         <ImageButton
             android:id="@+id/imageButton3"
+            style="@style/playing_button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/imageButton2"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@android:drawable/ic_media_play"
-            style="@style/playing_button" />
+            app:srcCompat="@android:drawable/ic_media_play" />
 
         <TextView
             android:id="@+id/textView4"
+            style="@style/playlist_textView"
             android:text="@string/playlist"
             app:layout_constraintEnd_toStartOf="@+id/imageButton3"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintStart_toStartOf="@+id/imageButton2"
-            app:layout_constraintTop_toBottomOf="@+id/imageButton2"
-            style="@style/playlist_textView" />
+            app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
 
         <TextView
             android:id="@+id/textView5"
+            style="@style/playing_textView"
             android:text="@string/playing_now"
             app:layout_constraintEnd_toEndOf="@+id/imageButton3"
             app:layout_constraintStart_toStartOf="@+id/imageButton3"
-            app:layout_constraintTop_toBottomOf="@+id/imageButton3"
-            style="@style/playing_textView" />
+            app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
     </android.support.constraint.ConstraintLayout>
 
 
