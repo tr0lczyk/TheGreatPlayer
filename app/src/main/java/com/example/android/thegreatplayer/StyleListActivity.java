@@ -1,8 +1,10 @@
 package com.example.android.thegreatplayer;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.sql.Array;
 import java.util.ArrayList;
@@ -14,8 +16,12 @@ public class StyleListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.style_list);
+        Intent intent = getIntent();
+        GenreObject genreObject = intent.getParcelableExtra("Boo");
+        ArrayList<SongObject> area = genreObject.getSongsList();
 
-        ArrayList<SongObject> area = this.getIntent().getParcelableExtra("GenreObject");
+        TextView styles = findViewById(R.id.styles);
+        styles.setText(genreObject.getGenreOfMusic());
 
         SongsAdapter songAdapter = new SongsAdapter(this, area);
         ListView songListView = findViewById(R.id.listView);

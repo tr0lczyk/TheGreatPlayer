@@ -2,6 +2,7 @@ package com.example.android.thegreatplayer;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -224,7 +225,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
                 GenreObject currentGenreObject = genres.get(position);
                 Intent intent = new Intent(MainActivity.this, StyleListActivity.class);
-                intent.putExtra("GenreObject",currentGenreObject.getSongsList());
+                intent.putExtra("Boo", currentGenreObject);
                 startActivity(intent);
             }
         });

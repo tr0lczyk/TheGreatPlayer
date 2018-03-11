@@ -28,12 +28,12 @@ public class SongsAdapter extends ArrayAdapter<SongObject> {
 
         View listItemView = convertView;
         if (listItemView == null){
-            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.style_list,parent,false);
+            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item,parent,false);
         }
 
         SongObject currentSongObject = getItem(position);
 
-        TextView artistSong = listItemView.findViewById(R.id.artist);
+        TextView artistSong = listItemView.findViewById(R.id.artisto);
         artistSong.setText(currentSongObject.getMusicianName());
 
         TextView titleSong = listItemView.findViewById(R.id.titleOfSong);

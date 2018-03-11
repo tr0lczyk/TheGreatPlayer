@@ -5,12 +5,14 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.Property;
 
+import java.io.Serializable;
+
 
 /**
  * Created by Mateusz on 10.03.2018.
  */
 
-public class SongObject implements Parcelable{
+public class SongObject implements Serializable{
 
     private String mMusicianName;
 
@@ -31,34 +33,4 @@ public class SongObject implements Parcelable{
 
 
 
-    //write object values to parcel for storage
-    public void writeToParcel(Parcel dest, int flags){
-        dest.writeString(mMusicianName);
-        dest.writeString(mSongTitle);
-    }
-
-    //constructor used for parcel
-    public SongObject(Parcel parcel){
-        mMusicianName = parcel.readString();
-        mSongTitle = parcel.readString();
-    }
-
-    //creator - used when un-parceling our parcle (creating the object)
-    public static final Parcelable.Creator<SongObject> CREATOR = new Parcelable.Creator<SongObject>(){
-
-        @Override
-        public SongObject createFromParcel(Parcel parcel) {
-            return new SongObject(parcel);
-        }
-
-        @Override
-        public SongObject[] newArray(int size) {
-            return new SongObject[0];
-        }
-    };
-
-    //return hashcode of object
-    public int describeContents() {
-        return hashCode();
-    }
 }

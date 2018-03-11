@@ -8,7 +8,7 @@
     android:background="@color/playing_color">
 
     <TextView
-        android:id="@+id/artist"
+        android:id="@+id/artisto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:text="Artist"
@@ -17,7 +17,7 @@
 
     <TextView
         android:id="@+id/titleOfSong"
-        android:layout_below="@+id/artist"
+        android:layout_below="@+id/artisto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:text="Particular title"
