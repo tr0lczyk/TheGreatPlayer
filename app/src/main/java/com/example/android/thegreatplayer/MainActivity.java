@@ -224,7 +224,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
                 GenreObject currentGenreObject = genres.get(position);
                 Intent intent = new Intent(MainActivity.this, StyleListActivity.class);
-                intent.putExtra("Array",currentGenreObject.getSongsList());
+                intent.putExtra("GenreObject",currentGenreObject.getSongsList());
                 startActivity(intent);
             }
         });

@@ -6,6 +6,7 @@ import android.widget.ListView;
 
 import java.sql.Array;
 import java.util.ArrayList;
+import java.util.List;
 
 public class StyleListActivity extends AppCompatActivity {
 
@@ -14,9 +15,10 @@ public class StyleListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.style_list);
 
-        ArrayList<SongObject> songList = (ArrayList<SongObject>) getIntent().getSerializableExtra("Array");
+        ArrayList<SongObject> area = this.getIntent().getParcelableExtra("GenreObject");
 
-
-
+        SongsAdapter songAdapter = new SongsAdapter(this, area);
+        ListView songListView = findViewById(R.id.listView);
+        songListView.setAdapter(songAdapter);
     }
 }
