@@ -23,7 +23,6 @@ public class SongsAdapter extends ArrayAdapter<SongObject> {
         super(context,0,songList);
     }
 
-
     @Override
     public View getView(int position, View convertView,  ViewGroup parent) {
 
@@ -34,11 +33,12 @@ public class SongsAdapter extends ArrayAdapter<SongObject> {
 
         SongObject currentSongObject = getItem(position);
 
-        TextView titleSong = listItemView.findViewById()
+        TextView artistSong = listItemView.findViewById(R.id.artist);
+        artistSong.setText(currentSongObject.getMusicianName());
 
+        TextView titleSong = listItemView.findViewById(R.id.titleOfSong);
+        titleSong.setText(currentSongObject.getSongTitle());
 
-
-
-        return super.getView(position, convertView, parent);
+        return listItemView;
     }
 }

@@ -1,5 +1,7 @@
 package com.example.android.thegreatplayer;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -195,7 +197,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        ArrayList<GenreObject> genres = new ArrayList<>();
+        final ArrayList<GenreObject> genres = new ArrayList<>();
 
         genres.add(new GenreObject("Rock", R.drawable.drums, rockSongs));
         genres.add(new GenreObject("Country", R.drawable.drums, countrySongs));
@@ -219,11 +221,12 @@ public class MainActivity extends AppCompatActivity {
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+                GenreObject currentGenreObject = genres.get(position);
+                Intent intent = new Intent(MainActivity.this, StyleListActivity.class);
+                intent.putExtra("Array",currentGenreObject.getSongsList());
+                startActivity(intent);
             }
         });
-
-
     }
 }
