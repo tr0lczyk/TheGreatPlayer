@@ -1,17 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@color/playing_color">
 
     <TextView
         android:id="@+id/artist"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Artist"
+        android:textColor="@color/white_color"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_below="@+id/artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Particular title"
+        android:textColor="@color/white_color"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/playcircle"/>
 
 </RelativeLayout>
