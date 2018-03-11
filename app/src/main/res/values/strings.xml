@@ -7,4 +7,7 @@
     <string name="rock">Rock</string>
     <string name="rock_text">Hey! Here you can access the list of the particular songs set in the style you have previously chosen.</string>
     <string name="playing_text">Wow! This is the screen where you can access.</string>
+    <string name="exact_time">2:36</string>
+    <string name="full_time">4:16</string>
+    <string name="headphones">headphones</string>
 </resources>
