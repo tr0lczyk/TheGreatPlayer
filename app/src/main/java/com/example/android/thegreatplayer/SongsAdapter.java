@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -28,8 +29,14 @@ public class SongsAdapter extends ArrayAdapter<SongObject> {
 
         View listItemView = convertView;
         if (listItemView == null){
-            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.playing_now,parent,false);
+            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.style_list,parent,false);
         }
+
+        SongObject currentSongObject = getItem(position);
+
+        TextView titleSong = listItemView.findViewById()
+
+
 
 
         return super.getView(position, convertView, parent);
