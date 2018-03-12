@@ -18,6 +18,5 @@ public class PlayingActivity extends AppCompatActivity {
 
         song.setText(extras.getString("Song"));
         artist.setText(extras.getString("Artist"));
-
     }
 }

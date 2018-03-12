@@ -10,4 +10,5 @@
     <string name="exact_time">2:36</string>
     <string name="full_time">4:16</string>
     <string name="headphones">headphones</string>
+    <string name="playing_intro_text">Let\'s play!</string>
 </resources>
