@@ -9,7 +9,10 @@ import android.view.View;
 import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.GridView;
+import android.widget.ImageButton;
+import java.util.Random;
 
 import java.util.ArrayList;
 
@@ -226,6 +229,21 @@ public class MainActivity extends AppCompatActivity {
                 GenreObject currentGenreObject = genres.get(position);
                 Intent intent = new Intent(MainActivity.this, StyleListActivity.class);
                 intent.putExtra("Boo", currentGenreObject);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton playlistButton = findViewById(R.id.imageButton2);
+
+        playlistButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int position = 0;
+                Random random = new Random();
+                position = random.nextInt(14) + 1;
+                GenreObject defaultGenreObject = genres.get(position);
+                Intent intent = new Intent(MainActivity.this, StyleListActivity.class);
+                intent.putExtra("Boo", defaultGenreObject);
                 startActivity(intent);
             }
         });
