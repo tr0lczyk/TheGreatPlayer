@@ -395,11 +395,11 @@ public class MainActivity extends AppCompatActivity {
         playingButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int position = 0;
+                int position;
                 Random random = new Random();
                 position = random.nextInt(14);
                 GenreObject genreObject = genres.get(position);
-                int position2 = 0;
+                int position2;
                 position2 = random.nextInt(20);
                 SongObject songObject = genreObject.getSongsList().get(position2);
                 Intent intent = new Intent(MainActivity.this, PlayingActivity.class);
