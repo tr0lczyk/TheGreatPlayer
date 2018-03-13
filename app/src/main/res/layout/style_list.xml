@@ -70,7 +70,7 @@
             app:layout_constraintStart_toEndOf="@+id/imageButton"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@android:drawable/ic_menu_share"
-            style="@style/playlist_button" />
+            style="@style/playlist_button_pushed"/>
 
         <ImageButton
             android:id="@+id/imageButton3"
@@ -89,7 +89,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintStart_toStartOf="@+id/imageButton2"
             app:layout_constraintTop_toBottomOf="@+id/imageButton2"
-            style="@style/playlist_textView" />
+            style="@style/playlist_textView_pushed" />
 
         <TextView
             android:id="@+id/textView5"

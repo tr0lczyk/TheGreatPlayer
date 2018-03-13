@@ -7,4 +7,5 @@
     <color name="styles_color">#333333</color>
     <color name="playing_color">#4d4d4d</color>
     <color name="white_color">#ffffff</color>
+    <color name="pushed_button">#808080</color>
 </resources>

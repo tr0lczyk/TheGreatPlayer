@@ -240,7 +240,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 int position = 0;
                 Random random = new Random();
-                position = random.nextInt(14) + 1;
+                position = random.nextInt(14);
                 GenreObject defaultGenreObject = genres.get(position);
                 Intent intent = new Intent(MainActivity.this, StyleListActivity.class);
                 intent.putExtra("Boo", defaultGenreObject);

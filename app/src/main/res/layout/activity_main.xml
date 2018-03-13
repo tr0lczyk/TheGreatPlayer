@@ -49,7 +49,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@android:drawable/ic_input_get"
-            style="@style/genres_button" />
+            style="@style/genres_button_pushed" />
 
         <TextView
             android:id="@+id/textView3"
@@ -58,7 +58,7 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageButton"
-            style="@style/genres_textView" />
+            style="@style/genres_textView_pushed" />
 
         <ImageButton
             android:id="@+id/imageButton2"
