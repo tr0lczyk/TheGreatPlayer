@@ -85,7 +85,7 @@
             android:layout_height="24dp"
             android:layout_marginTop="16dp"
             android:backgroundTint="@android:color/transparent"
-            android:contentDescription="TODO"
+            android:contentDescription="Play button"
             android:tint="@android:color/background_light"
             app:layout_constraintEnd_toEndOf="@+id/progressBar"
             app:layout_constraintStart_toStartOf="@+id/progressBar"
@@ -99,6 +99,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:backgroundTint="@android:color/transparent"
+            android:contentDescription="forward button"
             android:tint="@android:color/background_light"
             app:layout_constraintStart_toEndOf="@+id/imageButton4"
             app:layout_constraintTop_toBottomOf="@+id/progressBar"
@@ -111,6 +112,7 @@
             android:layout_marginEnd="16dp"
             android:layout_marginTop="16dp"
             android:backgroundTint="@android:color/transparent"
+            android:contentDescription="previous button"
             android:tint="@android:color/background_light"
             app:layout_constraintEnd_toStartOf="@+id/imageButton4"
             app:layout_constraintTop_toBottomOf="@+id/progressBar"
@@ -159,6 +161,7 @@
         <ImageButton
             android:id="@+id/imageButton"
             style="@style/genres_button"
+            android:contentDescription="@string/genres_icon"
             app:layout_constraintEnd_toStartOf="@+id/imageButton2"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -177,6 +180,7 @@
         <ImageButton
             android:id="@+id/imageButton2"
             style="@style/playlist_button"
+            android:contentDescription="@string/playlist_icon"
             app:layout_constraintEnd_toStartOf="@+id/imageButton3"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/imageButton"
@@ -186,6 +190,7 @@
         <ImageButton
             android:id="@+id/imageButton3"
             style="@style/playing_button_pushed"
+            android:contentDescription="Playing icon"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/imageButton2"

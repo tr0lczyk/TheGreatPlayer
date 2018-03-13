@@ -44,12 +44,13 @@
 
         <ImageButton
             android:id="@+id/imageButton"
+            style="@style/genres_button_pushed"
+            android:contentDescription="@string/genres_icon"
             app:layout_constraintEnd_toStartOf="@+id/imageButton2"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@android:drawable/ic_input_get"
-            style="@style/genres_button_pushed" />
+            app:srcCompat="@android:drawable/ic_input_get" />
 
         <TextView
             android:id="@+id/textView3"
@@ -62,21 +63,23 @@
 
         <ImageButton
             android:id="@+id/imageButton2"
+            style="@style/playlist_button"
+            android:contentDescription="@string/playlist_icon"
             app:layout_constraintEnd_toStartOf="@+id/imageButton3"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/imageButton"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@android:drawable/ic_menu_share"
-            style="@style/playlist_button" />
+            app:srcCompat="@android:drawable/ic_menu_share" />
 
         <ImageButton
             android:id="@+id/imageButton3"
+            style="@style/playing_button"
+            android:contentDescription="@string/playing_string_playing_now"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/imageButton2"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@android:drawable/ic_media_play"
-            style="@style/playing_button" />
+            app:srcCompat="@android:drawable/ic_media_play" />
 
         <TextView
             android:id="@+id/textView4"

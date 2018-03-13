@@ -11,4 +11,7 @@
     <string name="full_time">4:16</string>
     <string name="headphones">headphones</string>
     <string name="playing_intro_text">Let\'s play!</string>
+    <string name="playing_string_playing_now">Playing @string/playing_now</string>
+    <string name="genres_icon">Genres Icon</string>
+    <string name="playlist_icon">Playlist Icon</string>
 </resources>
