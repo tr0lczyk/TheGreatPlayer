@@ -20,6 +20,8 @@ public class PlayingActivity extends AppCompatActivity {
 
         Bundle extras = getIntent().getExtras();
 
+        final GenreObject genreObject = getIntent().getParcelableExtra("Boo");
+
         song.setText(extras.getString("Song"));
         artist.setText(extras.getString("Artist"));
 
@@ -39,6 +41,7 @@ public class PlayingActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(PlayingActivity.this, StyleListActivity.class);
+                intent.putExtra("Boo",genreObject);
                 startActivity(intent);
             }
         });

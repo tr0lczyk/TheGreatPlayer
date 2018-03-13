@@ -405,6 +405,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, PlayingActivity.class);
                 intent.putExtra("Song",songObject.getSongTitle());
                 intent.putExtra("Artist",songObject.getMusicianName());
+                intent.putExtra("Boo",genreObject);
                 startActivity(intent);
             }
         });
