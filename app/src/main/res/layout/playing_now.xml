@@ -185,7 +185,7 @@
 
         <ImageButton
             android:id="@+id/imageButton3"
-            style="@style/playing_button"
+            style="@style/playing_button_pushed"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/imageButton2"
@@ -204,7 +204,7 @@
 
         <TextView
             android:id="@+id/textView5"
-            style="@style/playing_textView"
+            style="@style/playing_textView_pushed"
             android:text="@string/playing_now"
             app:layout_constraintEnd_toEndOf="@+id/imageButton3"
             app:layout_constraintStart_toStartOf="@+id/imageButton3"

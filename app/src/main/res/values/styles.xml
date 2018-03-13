@@ -106,6 +106,14 @@
         <item name="android:tint">@android:color/holo_orange_dark</item>
     </style>
 
+    <style name="playing_button_pushed">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@color/darkgrey</item>
+        <item name="android:cropToPadding">true</item>
+        <item name="android:tint">@color/pushed_button</item>
+    </style>
+
     <style name="playlist_textView">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
@@ -125,6 +133,13 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textAlignment">center</item>
         <item name="android:textColor">@android:color/holo_orange_dark</item>
+    </style>
+
+    <style name="playing_textView_pushed">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/pushed_button</item>
     </style>
 
 </resources>

@@ -34,8 +34,28 @@ public class MainActivity extends AppCompatActivity {
         rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
         rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
         rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
 
         ArrayList<SongObject> countrySongs = new ArrayList<>();
+        countrySongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        countrySongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        countrySongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        countrySongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        countrySongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        countrySongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        countrySongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        countrySongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        countrySongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        countrySongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
         countrySongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
         countrySongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
         countrySongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
@@ -58,8 +78,28 @@ public class MainActivity extends AppCompatActivity {
         bluesSongs.add( new SongObject("Nirvana", "Smells Like Teen Spirit"));
         bluesSongs.add( new SongObject("Nirvana", "Smells Like Teen Spirit"));
         bluesSongs.add( new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        bluesSongs.add( new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        bluesSongs.add( new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        bluesSongs.add( new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        bluesSongs.add( new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        bluesSongs.add( new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        bluesSongs.add( new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        bluesSongs.add( new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        bluesSongs.add( new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        bluesSongs.add( new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        bluesSongs.add( new SongObject("Nirvana", "Smells Like Teen Spirit"));
 
         ArrayList<SongObject> jazzSongs = new ArrayList<>();
+        jazzSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        jazzSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        jazzSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        jazzSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        jazzSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        jazzSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        jazzSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        jazzSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        jazzSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        jazzSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
         jazzSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
         jazzSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
         jazzSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
@@ -83,6 +123,16 @@ public class MainActivity extends AppCompatActivity {
         metalSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
         metalSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
         metalSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        metalSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        metalSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        metalSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        metalSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        metalSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        metalSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        metalSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        metalSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        metalSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+
 
         ArrayList<SongObject> funkSongs = new ArrayList<>();
         funkSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
@@ -96,6 +146,16 @@ public class MainActivity extends AppCompatActivity {
         funkSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
         funkSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
         funkSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        funkSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        funkSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        funkSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        funkSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        funkSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        funkSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        funkSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        funkSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        funkSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+
 
         ArrayList<SongObject> soulSongs = new ArrayList<>();
         soulSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
@@ -108,8 +168,28 @@ public class MainActivity extends AppCompatActivity {
         soulSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
         soulSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
         soulSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        soulSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        soulSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        soulSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        soulSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        soulSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        soulSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        soulSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        soulSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        soulSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        soulSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
 
         ArrayList<SongObject> randbSongs = new ArrayList<>();
+        randbSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        randbSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        randbSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        randbSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        randbSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        randbSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        randbSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        randbSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        randbSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        randbSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
         randbSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
         randbSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
         randbSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
@@ -133,8 +213,29 @@ public class MainActivity extends AppCompatActivity {
         popSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
         popSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
         popSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        popSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        popSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        popSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        popSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        popSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        popSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        popSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        popSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        popSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        popSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
 
         ArrayList<SongObject> classicSongs = new ArrayList<>();
+        classicSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        classicSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        classicSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        classicSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        classicSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        classicSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        classicSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        classicSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        classicSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        classicSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        classicSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
         classicSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
         classicSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
         classicSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
@@ -158,9 +259,29 @@ public class MainActivity extends AppCompatActivity {
         hiphopSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
         hiphopSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
         hiphopSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        hiphopSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        hiphopSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        hiphopSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        hiphopSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        hiphopSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        hiphopSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        hiphopSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        hiphopSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        hiphopSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        hiphopSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
 
 
         ArrayList<SongObject> punkRockSongs = new ArrayList<>();
+        punkRockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        punkRockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        punkRockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        punkRockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        punkRockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        punkRockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        punkRockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        punkRockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        punkRockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        punkRockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
         punkRockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
         punkRockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
         punkRockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
@@ -184,8 +305,29 @@ public class MainActivity extends AppCompatActivity {
         technoSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
         technoSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
         technoSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        technoSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        technoSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        technoSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        technoSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        technoSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        technoSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        technoSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        technoSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        technoSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        technoSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
 
         ArrayList<SongObject> filmSongs = new ArrayList<>();
+        filmSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        filmSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        filmSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        filmSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        filmSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        filmSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        filmSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        filmSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        filmSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        filmSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        filmSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
         filmSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
         filmSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
         filmSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
@@ -244,6 +386,25 @@ public class MainActivity extends AppCompatActivity {
                 GenreObject defaultGenreObject = genres.get(position);
                 Intent intent = new Intent(MainActivity.this, StyleListActivity.class);
                 intent.putExtra("Boo", defaultGenreObject);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton playingButton = findViewById(R.id.imageButton3);
+
+        playingButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int position = 0;
+                Random random = new Random();
+                position = random.nextInt(14);
+                GenreObject genreObject = genres.get(position);
+                int position2 = 0;
+                position2 = random.nextInt(20);
+                SongObject songObject = genreObject.getSongsList().get(position2);
+                Intent intent = new Intent(MainActivity.this, PlayingActivity.class);
+                intent.putExtra("Song",songObject.getSongTitle());
+                intent.putExtra("Artist",songObject.getMusicianName());
                 startActivity(intent);
             }
         });

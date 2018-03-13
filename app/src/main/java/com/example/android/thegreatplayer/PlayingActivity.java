@@ -1,7 +1,11 @@
 package com.example.android.thegreatplayer;
 
+import android.content.Intent;
+import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class PlayingActivity extends AppCompatActivity {
@@ -18,5 +22,25 @@ public class PlayingActivity extends AppCompatActivity {
 
         song.setText(extras.getString("Song"));
         artist.setText(extras.getString("Artist"));
+
+        ImageButton genresButton = findViewById(R.id.imageButton);
+
+        genresButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PlayingActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton playlistButton = findViewById(R.id.imageButton2);
+
+        playlistButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PlayingActivity.this, StyleListActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
