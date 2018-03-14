@@ -46,26 +46,8 @@ public class MainActivity extends AppCompatActivity {
         rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
 
         ArrayList<SongObject> countrySongs = new ArrayList<>();
-        countrySongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        countrySongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        countrySongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        countrySongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        countrySongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        countrySongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        countrySongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        countrySongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        countrySongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        countrySongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        countrySongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        countrySongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        countrySongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        countrySongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        countrySongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        countrySongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        countrySongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        countrySongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        countrySongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        countrySongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        countrySongs.addAll(rockSongs);
+
 
         ArrayList<SongObject> bluesSongs = new ArrayList<>();
         bluesSongs.add( new SongObject("Nirvana", "Smells Like Teen Spirit"));
