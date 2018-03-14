@@ -22,7 +22,7 @@ public class StyleListActivity extends AppCompatActivity {
         setContentView(R.layout.style_list);
         Intent intent = getIntent();
         GenreObject genreObject = intent.getParcelableExtra("Boo");
-        final ArrayList<SongObject> area = genreObject.getSongsList();
+        final List<SongObject> area = genreObject.getSongsList();
 
         TextView styles = findViewById(R.id.styles);
         styles.setText(genreObject.getGenreOfMusic());

@@ -11,6 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Mateusz on 11.03.2018.
@@ -19,7 +20,7 @@ import java.util.ArrayList;
 public class SongsAdapter extends ArrayAdapter<SongObject> {
 
 
-    public SongsAdapter(Activity context, ArrayList<SongObject> songList){
+    public SongsAdapter(Activity context, List<SongObject> songList){
         super(context,0,songList);
     }
 

@@ -12,6 +12,10 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageButton;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
 import java.util.ArrayList;
@@ -23,77 +27,33 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         ArrayList<SongObject> rockSongs = new ArrayList<>();
         int sizeRockSongs = 20;
         for (int i = 0; i < sizeRockSongs; i++) {
             rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
         }
 
-
-        ArrayList<SongObject> countrySongs = new ArrayList<>();
-        countrySongs.addAll(rockSongs);
-
-
-        ArrayList<SongObject> bluesSongs = new ArrayList<>();
-        bluesSongs.addAll(rockSongs);
-
-        ArrayList<SongObject> jazzSongs = new ArrayList<>();
-        jazzSongs.addAll(rockSongs);
-
-        ArrayList<SongObject> metalSongs = new ArrayList<>();
-        metalSongs.addAll(rockSongs);
-
-
-        ArrayList<SongObject> funkSongs = new ArrayList<>();
-        funkSongs.addAll(rockSongs);
-
-
-        ArrayList<SongObject> soulSongs = new ArrayList<>();
-        soulSongs.addAll(rockSongs);
-
-        ArrayList<SongObject> randbSongs = new ArrayList<>();
-        randbSongs.addAll(rockSongs);
-
-
-        ArrayList<SongObject> popSongs = new ArrayList<>();
-        popSongs.addAll(rockSongs);
-
-        ArrayList<SongObject> classicSongs = new ArrayList<>();
-        classicSongs.addAll(rockSongs);
-
-        ArrayList<SongObject> hiphopSongs = new ArrayList<>();
-        hiphopSongs.addAll(rockSongs);
-
-
-        ArrayList<SongObject> punkRockSongs = new ArrayList<>();
-        punkRockSongs.addAll(rockSongs);
-
-
-        ArrayList<SongObject> technoSongs = new ArrayList<>();
-        technoSongs.addAll(rockSongs);
-
-        ArrayList<SongObject> filmSongs = new ArrayList<>();
-        filmSongs.addAll(rockSongs);
-
+        Map<String, List<SongObject>> genreOfSongs = new HashMap<>();
+        genreOfSongs.put("Rock", rockSongs);
+        genreOfSongs.put("Country", rockSongs);
+        genreOfSongs.put("Blues", rockSongs);
+        genreOfSongs.put("Jazz", rockSongs);
+        genreOfSongs.put("Metal", rockSongs);
+        genreOfSongs.put("Funk", rockSongs);
+        genreOfSongs.put("Soul", rockSongs);
+        genreOfSongs.put("Randb", rockSongs);
+        genreOfSongs.put("Pop", rockSongs);
+        genreOfSongs.put("Classic", rockSongs);
+        genreOfSongs.put("HipHop", rockSongs);
+        genreOfSongs.put("Punk rock", rockSongs);
+        genreOfSongs.put("Techno", rockSongs);
+        genreOfSongs.put("Film", rockSongs);
 
         final ArrayList<GenreObject> genres = new ArrayList<>();
 
-        genres.add(new GenreObject("Rock", R.drawable.drums, rockSongs));
-        genres.add(new GenreObject("Country", R.drawable.drums, countrySongs));
-        genres.add(new GenreObject("Blues", R.drawable.drums,bluesSongs));
-        genres.add(new GenreObject("Jazz", R.drawable.drums, jazzSongs));
-        genres.add(new GenreObject("Metal", R.drawable.drums, metalSongs));
-        genres.add(new GenreObject("Funk", R.drawable.drums, funkSongs));
-        genres.add(new GenreObject("Soul", R.drawable.drums, soulSongs));
-        genres.add(new GenreObject("R&B", R.drawable.drums, randbSongs));
-        genres.add(new GenreObject("Pop", R.drawable.drums, popSongs));
-        genres.add(new GenreObject("Classic", R.drawable.drums, classicSongs));
-        genres.add(new GenreObject("Hip-hop", R.drawable.drums, hiphopSongs));
-        genres.add(new GenreObject("Punk rock", R.drawable.drums, punkRockSongs));
-        genres.add(new GenreObject("Techno", R.drawable.drums, technoSongs));
-        genres.add(new GenreObject("Film",R.drawable.drums, filmSongs));
-
+        for (Map.Entry<String, List<SongObject>> genre : genreOfSongs.entrySet()){
+            genres.add(new GenreObject(genre.getKey(),R.drawable.drums, genre.getValue()));
+        }
 
         GenreAdapter adapter = new GenreAdapter(this,genres);
         GridView gridView = findViewById(R.id.gridView);
