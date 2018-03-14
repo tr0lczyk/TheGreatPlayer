@@ -23,27 +23,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         ArrayList<SongObject> rockSongs = new ArrayList<>();
-        rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
-        rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        int sizeRockSongs = 20;
+        for (int i = 0; i < sizeRockSongs; i++) {
+            rockSongs.add(new SongObject("Nirvana", "Smells Like Teen Spirit"));
+        }
+
 
         ArrayList<SongObject> countrySongs = new ArrayList<>();
         countrySongs.addAll(rockSongs);
@@ -128,9 +114,8 @@ public class MainActivity extends AppCompatActivity {
         playlistButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int position = 0;
                 Random random = new Random();
-                position = random.nextInt(14);
+                int position = random.nextInt(14);
                 GenreObject defaultGenreObject = genres.get(position);
                 Intent intent = new Intent(MainActivity.this, StyleListActivity.class);
                 intent.putExtra("Boo", defaultGenreObject);
@@ -143,9 +128,8 @@ public class MainActivity extends AppCompatActivity {
         playingButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int position;
                 Random random = new Random();
-                position = random.nextInt(14);
+                int position = random.nextInt(14);
                 GenreObject genreObject = genres.get(position);
                 int position2;
                 position2 = random.nextInt(20);

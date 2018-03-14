@@ -6,6 +6,7 @@ import android.os.Parcelable;
 import android.util.Property;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Mateusz on 07.03.2018.
@@ -17,9 +18,9 @@ public class GenreObject implements Parcelable{
 
     private int mImgResource;
 
-    private ArrayList<SongObject> mSongs;
+    private List<SongObject> mSongs;
 
-    public GenreObject(String genreOfMusic, int imgResource, ArrayList<SongObject> songs ){
+    public GenreObject(String genreOfMusic, int imgResource, List<SongObject> songs ){
         mGenreOfMusic = genreOfMusic;
         mImgResource = imgResource;
         mSongs = songs;
@@ -33,7 +34,7 @@ public class GenreObject implements Parcelable{
         return mImgResource;
     }
 
-    public ArrayList<SongObject> getSongsList(){
+    public List<SongObject> getSongsList(){
         return mSongs;
     }
 
