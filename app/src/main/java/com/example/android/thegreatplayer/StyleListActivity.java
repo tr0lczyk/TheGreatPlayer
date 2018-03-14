@@ -8,9 +8,6 @@ import android.widget.AdapterView;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
-
-import java.sql.Array;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 

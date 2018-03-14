@@ -1,23 +1,16 @@
 package com.example.android.thegreatplayer;
 
-import android.content.Context;
 import android.content.Intent;
-import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageButton;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
-
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
