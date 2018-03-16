@@ -11,42 +11,42 @@ import java.util.List;
 
 public class GenreObject implements Parcelable{
 
-    private String mGenreOfMusic;
+    private String musicGenre;
 
-    private int mImgResource;
+    private int resourceImg;
 
-    private List<SongObject> mSongs;
+    private List<SongObject> songsList;
 
     public GenreObject(String genreOfMusic, int imgResource, List<SongObject> songs ){
-        mGenreOfMusic = genreOfMusic;
-        mImgResource = imgResource;
-        mSongs = songs;
+        musicGenre = genreOfMusic;
+        resourceImg = imgResource;
+        songsList = songs;
     }
 
     public String getGenreOfMusic(){
-        return mGenreOfMusic;
+        return musicGenre;
     }
 
     public  int getImgResource(){
-        return mImgResource;
+        return resourceImg;
     }
 
     public List<SongObject> getSongsList(){
-        return mSongs;
+        return songsList;
     }
 
     //write object values to parcel for storage
     public void writeToParcel(Parcel dest, int flags){
-        dest.writeString(mGenreOfMusic);
-        dest.writeInt(mImgResource);
-        dest.writeList(mSongs);
+        dest.writeString(musicGenre);
+        dest.writeInt(resourceImg);
+        dest.writeList(songsList);
     }
 
     //constructor used for parcel
     public GenreObject(Parcel parcel){
-        mGenreOfMusic = parcel.readString();
-        mImgResource = parcel.readInt();
-        mSongs = parcel.readArrayList(null);
+        musicGenre = parcel.readString();
+        resourceImg = parcel.readInt();
+        songsList = parcel.readArrayList(null);
     }
 
     //creator - used when un-parceling our parcle (creating the object)
