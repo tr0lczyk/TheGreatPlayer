@@ -49,7 +49,7 @@ public class GenreObject implements Parcelable{
         songsList = parcel.readArrayList(null);
     }
 
-    //creator - used when un-parceling our parcle (creating the object)
+    //creator - used when un-parceling our parcel (creating the object)
     public static final Parcelable.Creator<GenreObject> CREATOR = new Parcelable.Creator<GenreObject>(){
 
         @Override
