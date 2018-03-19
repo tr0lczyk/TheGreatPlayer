@@ -3,11 +3,6 @@ package com.example.android.thegreatplayer;
 
 import java.io.Serializable;
 
-
-/**
- * Created by Mateusz on 10.03.2018.
- */
-
 public class SongObject implements Serializable{
 
     private String nameMusician;
@@ -26,6 +21,5 @@ public class SongObject implements Serializable{
     public String getSongTitle(){
         return titleSong;
     }
-
 
 }
