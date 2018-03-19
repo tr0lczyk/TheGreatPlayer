@@ -1,13 +1,8 @@
 package com.example.android.thegreatplayer;
 
-
 import android.os.Parcel;
 import android.os.Parcelable;
 import java.util.List;
-
-/**
- * Created by Mateusz on 07.03.2018.
- */
 
 public class GenreObject implements Parcelable{
 
@@ -46,7 +41,7 @@ public class GenreObject implements Parcelable{
     public GenreObject(Parcel parcel){
         musicGenre = parcel.readString();
         resourceImg = parcel.readInt();
-        songsList = parcel.readArrayList(null);
+        songsList = parcel.readArrayList(SongObject.class.getClassLoader());
     }
 
     //creator - used when un-parceling our parcel (creating the object)
@@ -59,7 +54,7 @@ public class GenreObject implements Parcelable{
 
         @Override
         public GenreObject[] newArray(int size) {
-            return new GenreObject[0];
+            return new GenreObject[size];
         }
     };
 
